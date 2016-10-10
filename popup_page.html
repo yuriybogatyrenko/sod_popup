@@ -1,0 +1,1465 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>popup_page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/SOD_STYLE.css" />
+	<link rel="stylesheet" type="text/css" href="css/popup_addinfo.css" />
+	<link rel="stylesheet" type="text/css" href="css/sod_new__popup.css" />
+
+	<!--[if IE]>
+		<!--<script src="js/ie_fix.js"></script>-->
+	<![endif]-->
+</head>
+<body>
+<div id="wrapper" class="popup_page">
+	<div class="cont_wrap link_popup">
+		<a href="#"  class="in_bl" data-popup-open="voice_call">Голосовой вызов</a>
+		<a href="#"  class="in_bl" data-popup-open="voice_call2">Голосовой вызов2</a>
+		<a href="#"  class="in_bl" data-popup-open="sms_pop">Голосовой вызов3/sms</a>
+		<a href="#"  class="in_bl" data-popup-open="user_call_pop">Позвонить пользователю</a>
+		<a href="#"  class="in_bl" data-popup-open="not_connected_pop">Не подключила</a>
+		<a href="#"  class="in_bl" data-popup-open="connected_pop">Подключила</a>
+		<a href="#"  class="in_bl" data-popup-open="time_to_call">Время для звонков</a>
+		<a href="#"  class="in_bl" data-popup-open="no_gays">Нет геям</a>
+		<a href="#"  class="in_bl" data-popup-open="add_photo">Загрузка фото(платно)</a>
+		<a href="#"  class="in_bl" data-popup-open="who_online">Кто онлайн</a>
+		<a href="#"  class="in_bl" data-popup-open="confirmed_photos">Подтвержденные фото</a>
+		<a href="#"  class="in_bl" data-popup-open="login_popup">Вход</a>
+		<a href="#"  class="in_bl" data-popup-open="сongratulations">Поздравляем</a>
+		<a href="#"  class="in_bl" data-popup-open="active_premium">Активируй премиум</a>
+		<a href="#"  class="in_bl" data-popup-open="add_photoblog">Добавить в фотоленту</a>
+		<a href="#"  class="in_bl" data-popup-open="message_popup">Вызов Сообщений</a>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<a href="#"  class="in_bl" data-popup-open="add_mask">Добавить маску</a>
+		<a href="#"  class="in_bl" data-popup-open="add_mask2">Добавить маску вариант 2</a>
+		<a href="#"  class="in_bl" data-popup-open="add_mask3">Добавить маску вариант 3</a>
+		<a href="#"  class="in_bl" data-popup-open="popup_men">Popup men</a>
+		<a href="#"  class="in_bl" data-popup-open="popup_men2">Popup men 2</a>
+	</div>
+
+<div class="popup_work_descr">
+	<p> <span>data-popup-open="voice_call"</span> - прописываем нужной кнопке, для вызова попапа(может быть сколько угодно кнопок, будут вызывать один попап) в кавычках само имя нужного попапа </p>
+	<p> <span>data-popup-block="voice_call"</span> - сам попап, в кавычках имя </p>
+	<p> <span>data-popup-close="voice_call"</span> - кнопка для закрытия попапа(может быть сколько угодно кнопок, будут закрывать один попап), в кавычках имя закрываемого попапа </p>
+	<p> блок с классом "overlay" затемненный задний фон, один для всех, вставляем в блок #wrapper</p>
+</div>
+
+
+<div class="overlay">
+<div class="table_wrap">
+<div class="td_wrap">
+
+	<div class="main_popup popup_men" data-popup-block="popup_men">
+		<div class="close_popup" data-popup-close="popup_men"></div>
+		<p class="title_pop">Подтвердите почту</p>
+		<div class='descr mb20'>
+			Для полного доступа к сайту необходимо подтвердить почту <br> <a href="mailto:mail@mail.ru" class="red_link">mail@mail.ru</a>, указанную при регистрации, <br>для этого перейдите по ссылке, указанную в письме.
+		</div>
+		<p class="mb20"><a href="#" class="main_red_btn">Продублировать письмо с активацией</a></p>
+		<div class="descr mb20">
+			Указать другую почту для регистрации и отправить
+			письмо с активацией
+		</div>
+		<form action="#" class="descr">
+			<input type="text" class="in_bl main_input">
+			<button class="violet_btn">Отправить</button>
+		</form>
+	</div>
+
+	<div class="main_popup popup_men2" data-popup-block="popup_men2">
+		<div class="close_popup" data-popup-close="popup_men2"></div>
+		<p class="title_pop">Поздравляем, вы зарегистрированы <br>и получаете премиум доступ на 36 часов</p>
+		<div class='descr mb20'>
+			На вашу почту <a href="mailto:mail@mail.ru" class="red_link">mail@mail.ru</a> мы выслали письмо для подтверждения <br>вашей регистрации, не забудьте активировать вашу анкету, перейдя <br>по ссылке в нем для получения доступа ко всем услугам сайта.
+		</div>
+		<p class="mb20"><a href="#" class="main_red_btn">Редактировать анкету</a></p>
+		<a class="violet_btn" href="#">Перейти в поиск</a>
+	</div>
+
+	<div class="main_popup add_photoblog" data-popup-block="add_photoblog">
+		<div class="close_popup" data-popup-close="add_photoblog"></div>
+		<p class="title_pop">Добавление в фотоленту</p>
+		<div class='select_photo'>
+			<div class="add_photo"></div>
+			<div class="with_scroll">
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+					<input type="checkbox" class="icon-check">
+					<img src="images/big_photo1.jpg" alt="">
+				</label>
+				<label class="in_bl item">
+				</label>
+			</div>
+		</div>
+		<div class='descr'>
+			Приобретайте место в сквозном блоке для того, чтобы вас заметили быстрее.<br>
+			Размещаясь в данном блоке, вы всегда будете на виду  у тысяч мужчин. <br>
+			Удвойте шансы на победу! <br>
+		</div>
+		<textarea class='greeting' placeholder="Напишите приветствие..."></textarea>
+		<div class="buy_block">
+			<div class="cost_txt">
+				Стоимость услуги <span>200.00 руб.</span>
+			</div>
+			<a href="#" class="violet_btn light" data-popup-close="add_photoblog">купить</a>
+		</div>
+	</div>
+
+
+	<div class="main_popup active_premium" data-popup-block="active_premium">
+		<div class="close_popup" data-popup-close="active_premium"></div>
+		<span class="crown_icon in_bl"></span>
+		<p class="title_pop viol_txt">Активируй премиум аккаунт</p>
+		<p class="title22">
+			И получи возможность общения <br> с девушками без ограничений
+		</p>
+		<p class="m_descr">
+			Пробный аккаунт, который вы получили после регистрации <br> действует <span class="b_t">36 часов.</span> В течение этого времени вы можете решить,<br> интересно вам общение на нашем сайте или нет.
+		</p>
+		<p class="title27 ttu">
+			ОСТАЛОСЬ 24 ЧАСА
+		</p>
+		<p>
+			<a href="#" class="green_btn in_bl">Активировать </a>
+		</p>
+		<p>
+			<a href="#" class="red_txt">Подробнее о премиум аккаунте</a>
+		</p>
+	</div>
+
+	<div class="main_popup сongratulations" data-popup-block="сongratulations">
+		<div class="close_popup" data-popup-close="сongratulations"></div>
+		<p class="title_pop viol_txt">Поздравляем!</p>
+		<p class="pop_bold_text">
+			Теперь твоя анкета стала активна и доступна для поиска.<br>
+			Для повышения своих шансов на успех, <br>
+			следуй нашим рекомендациям:
+		</p>
+		<ul class="green_num_ul">
+			<li>
+				<span class="num_icon">1</span>
+				Пишите первой. <br>
+				Мужчины на сайте обычно и так активны, но если вы напишите первой - это сильно ускорит общение.
+			</li>
+			<li>
+				<span class="num_icon">2</span>
+				Регулярно заходите на сайт. <br>
+				Мужчины любят писать тем, кто был недавно или сейчас на сайте.
+				Также ваша анкета будет показываться на главной странице (анкеты на главной выбираются случайно из недавних посетительниц).
+			</li>
+			<li>
+				<span class="num_icon">3</span>
+				Удерживайте вашу анкету наверху поиска. <br>
+				Для этого можете воспользоваться «Поднятие анкеты» и «Закрепление анкеты»
+			</li>
+		</ul>
+		<p class="btn_wrap">
+			<a href="#" class="green_btn in_bl">Поднять анкету</a>
+			<a href="#" class="green_btn in_bl">Войти в ТОП </a>
+		</p>
+	</div>
+
+
+
+	<div class="main_popup login_popup" data-popup-block="login_popup">
+		<div class="close_popup" data-popup-close="login_popup"></div>
+		<p class="title_pop">Вход</p>
+		<p class="input_wrap">
+			<input class="main_input" type="text" placeholder="e-mail">
+		</p>
+		<p class="input_wrap">
+			<input class="main_input" type="text" placeholder="Пароль">
+		</p>
+		<div class="input_wrap">
+			<button type="submit" class="violet_btn in_bl light" data-close="login_popup">Войти</button>
+		</div>
+		<p>
+			<a class="red_link" href="#">Забыли пароль ?</a>
+		</p>
+	</div>
+	
+	<div class="main_popup message_popup" data-popup-block="message_popup">
+		<div class="main_massage_wrap">
+			<div class="folders_bl messages_folders">
+				<div class="cont_wrap">
+					<div class="dib vam open_edit_messages_profiles">
+						<a href="#" class="open_edit_chats dib vam">Действия</a>
+						<div class="dd_menu_chats_action">
+							<ul>
+								<li><a href="#">Удалить диалог</a></li>
+								<li><a href="#">Переместить в другую папку</a></li>
+								<li><a href="#">Добавить в избранное</a></li>
+								<li><a href="#">Очистить диалог</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="folders_ul dib vam">
+						<li class="dib vam active">
+							<a href="#">Все</a>
+						</li>
+						<li class="dib vam">
+							<a class="dib vam" href="#">Прочитанные</a>
+						</li>
+						<li class="dib vam">
+							<a class="dib vam" href="#">Онлайн</a>
+						</li>
+						<li class="dib vam has_del_btn drop_hover clickable allways_hover">
+							<a class="dib vam" href="#">В игноре</a>
+							<span class="delete_folder dib vam trans icon-cancel drop_btn"></span>
+							<div class="drop_block tac">
+								<div class="drop_descr">
+									<p>Удалить папку и В игноре?</p>
+								</div>
+								<div class="main_red_btn drop_close dib cursor-pointer">Отмена</div>
+								<p>
+									<span class="add_later delete cursor-pointer">Удалить</span>
+								</p>
+							</div>
+						</li>
+						<li class="dib vam has_del_btn drop_hover clickable allways_hover">
+							<a class="dib vam" href="#">Избранные</a>
+							<span class="delete_folder dib vam trans icon-cancel drop_btn"></span>
+							<div class="drop_block tac">
+								<div class="drop_descr">
+									<p>Удалить папку и Избранные?</p>
+								</div>
+								<div class="main_red_btn drop_close dib cursor-pointer">Отмена</div>
+								<p>
+									<span class="add_later delete cursor-pointer">Удалить</span>
+								</p>
+							</div>
+						</li>
+						<li class="dib vam add_folder_btn_wrap">
+							<span class="add_folder_btn ffr">
+								<span class="icon-plus"></span> Добавить папку
+							</span>
+							<form class="add_folder_form" action="#">
+								<div class="input_wrap_folder">
+									<input type="text" class="no-js-ph dib vam ajax_edit_input" placeholder="Название папки" /> <button class="main_red_btn ok_btn ttu dib vam">ОК</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class="close_messages icon-cancel" data-popup-close="message_popup"></div>
+			</div>
+			<div class="cont_wrap">
+			<div class="content_wrap_shadow no_side_paddings page_message_separator lhn">
+				<div class="clearfix">
+					<div class='sidebar_msg_contacts'>
+						<div class="with_scroll">
+							<ul class='contacts_ul trans_child'>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>NikV</span>
+												<span class="status_round online in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li class="active">
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>NikV</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star-empty dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li class="call">
+									<label>
+										<div class="in_bl photo vam">
+											<span class="call_icon icon"></span>
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>Вызов</span>
+											</div>
+											<p class="last_message trans">Пропущенный вызов</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="icon-phone dib vam"></div>
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li class="admin">
+									<label>
+										<div class="in_bl photo vam">
+											<span class="logo_icon icon"></span>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>Администратор</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Изменение правил</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="icon-chat-empty dib vam"></div>
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>NikV</span>
+												<span class="status_round online in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>NikV</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star-empty dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>NikV</span>
+												<span class="status_round online in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>NikV</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star-empty dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>NikV</span>
+												<span class="status_round online in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>NikV</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star-empty dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>NikV</span>
+												<span class="status_round online in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>NikV</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star-empty dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>NikV</span>
+												<span class="status_round online in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class='icon_wrap dib vam'>
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>NikV</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class='icon_wrap dib vam'>
+											<div class="favorites icon-star-empty dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name ffr in_bl vam'>NikV</span>
+												<span class="status_round online in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class="icon_wrap dib vam">
+											<div class="favorites icon-star dib vam"></div>
+										</div>
+									</label>
+								</li>
+								<li>
+									<label>
+										<div class="in_bl photo vam">
+											<img src="images/girl1.jpg" alt="">
+											<div class="message_num">2</div>
+											<div class="hidden_checkbox">
+												<input type="checkbox" class="icon-ok" />
+											</div>
+										</div>
+										<div class="name_wrap dib vam">
+											<div class="top_line">
+												<span class='name vam ffr in_bl'>NikV</span>
+												<span class="status_round offline in_bl"></span>
+											</div>
+											<p class="last_message trans">Привет</p>
+										</div>
+										<div class='icon_wrap dib vam'>
+											<div class="favorites icon-star-empty dib vam"></div>
+										</div>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="message_list_wrap">
+						<div class="bl_title"><a href="#" class="speaker_name dib vam">Brandy</a><a href="#" class="dib vam">20 лет, Москва</a><a href="#" class="photo_verified icon dib vam"></a><a href="#" class="dib vam call_icon icon"></a> <div class="r_bl"><span class="dib vam status online">Он-лайн</span> <div class="lips_ic icon active dib vam"></div></div></div>
+						
+						<div class="message_list pos_r">
+							<div class="with_scroll">
+								<ul class="message_table">
+									<li class="message_item send">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item recieved">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item send">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item recieved">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item send">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item recieved">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item send">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item recieved">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item send">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item recieved">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item send">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item recieved">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item send">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+									<li class="message_item recieved">
+										<div class="avatar"><img src="images/girl1.jpg" alt=""/></div>
+										<div class="message_block">
+											<p class="person_name ffr">Дмитрий</p>
+											<div class="message_text_wrap pos_r">
+												<div class="message_text ffr">
+													<p>Лучшее всех</p>
+												</div>
+												<div class="message_time ffr">12:30</div>
+												<span class="corner"></span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<form class="send_block_wrap">
+								<div class="w66 dib tal vam">
+									<div class="input_wrap dib vam">
+										<div class="text_input_messages" contenteditable></div>
+										<span class="msg_input_ph">Ваше сообщение</span>
+										<textarea class="hidden"></textarea>
+									</div>
+								</div>
+								<div class="dib w33 tar vam right_wrapper_submit_Form">
+									<div class="popups_wrap icons_wrap dib vam">
+										<div class="dib vam present_ic ">
+											<span class="icon-gift" data-popup-open="gifts_popup"></span>
+										</div>
+
+										<div class="dib vam smile_ic drop_hover allways_hover hover_out">
+											<span class="icon-smile drop_btn"></span>
+											<div class="present_popup drop_block tac">
+												<ul class="present_list trans_all">
+													<li class="dib vam"></li>
+													<li class="dib vam active"></li>
+													<li class="dib vam"></li>
+													<li class="dib vam"></li>
+													<li class="dib vam"></li>
+												</ul>
+												<div class="present_price ffr">
+													50 руб.
+												</div>
+												<p><a href="#" class="add_later">Оплатить</a></p>
+											</div>
+										</div>
+
+										<!-- <div class="dib vam photo_ic  drop_hover allways_hover hover_out">
+											<span class="icon-camera-outline drop_btn"></span>
+											<div class="present_popup drop_block tac">
+												<ul class="present_list trans_all">
+													<li class="dib vam"></li>
+													<li class="dib vam active"></li>
+													<li class="dib vam"></li>
+													<li class="dib vam"></li>
+													<li class="dib vam"></li>
+												</ul>
+												<div class="present_price ffr">
+													50 руб.
+												</div>
+												<p><a href="#" class="add_later">Оплатить</a></p>
+											</div>
+										</div> -->
+									</div>
+									<div class="submit_wrap dib vam">
+										<button type="submit" class="violet_btn light">Отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main_popup confirmed_photos" data-popup-block="confirmed_photos">
+		<div class="close_popup" data-popup-close="confirmed_photos"></div>
+		<p class="title_pop">Подтвержденные фотографии</p>
+		<div class="descr_txt">На нашем сервисе девушки подтверждают свои фотографии посредством модерации. <br>  Девушка со своей фотографией в руке отправляет ее модераторам, которые проверяют <br> и присваивают статус «проверенное фото».</div>
+		<div class="photo_wrap">
+			<div class="in_bl">
+				<a href="#" class="confirmation">
+					<span class="icon"></span>
+				</a>
+				<img src="images/girl1.jpg" alt="">
+			</div>
+			<div class="in_bl">
+				<a href="#" class="confirmation active"><span class="icon"></span></a>
+				<img src="images/girl2.png" alt="">
+			</div>
+		</div>
+		<div class="descr_txt">Мужчины могут фильтровать девушек по данному фильтру. Подключите услугу и будьте <br>спокойны в том, что вы общаетесь действительно с девушкой. <br> Покупается услуга единожды.</div>
+		<form class="buy_form" action="#">
+			<div class="select_wrap_ dib vam">
+				<select name="">
+					<option value="1">Стоимость услуги на 2 часа   	200.00 руб.</option>
+					<option value="1">Стоимость услуги на 2 часа    200.00 руб.</option>
+					<option value="1">Стоимость услуги на 2 часа    200.00 руб.</option>
+					<option value="1">Стоимость услуги на 2 часа    200.00 руб.</option>
+				</select>
+			</div>
+			<div class="dib vam">
+				<button type="submit" class="violet_btn dib vam light" data-close="confirmed_photos">Купить</button>
+			</div>
+			<p class="total_cost ffr">Итого 200 руб.</p>
+		</form>
+	</div>
+
+
+	<div class="main_popup who_online" data-popup-block="who_online">
+		<div class="close_popup" data-popup-close="who_online"></div>
+		<p class="title_pop">Кто онлайн </p>
+		<div class="descr_txt">Вы можете узнать кто сейчас на сайте и готов к общению. <br> Это позволит отсечь анкеты тех девушек, кто давно не заходил на сайт <br> или находится в оффлайн  режиме. </div>
+		<form class="buy_form" action="#">
+			<div class="select_wrap_ dib vam">
+				<select name="">
+					<option value="1">Стоимость услуги на 2 часа   	200.00 руб.</option>
+					<option value="1">Стоимость услуги на 2 часа    200.00 руб.</option>
+					<option value="1">Стоимость услуги на 2 часа    200.00 руб.</option>
+					<option value="1">Стоимость услуги на 2 часа    200.00 руб.</option>
+				</select>
+			</div>
+			<div class="dib vam">
+				<button type="submit" class="violet_btn dib vam light">Купить</button>
+			</div>
+			<p class="total_cost ffr">Итого 200 руб.</p>
+		</form>
+	</div>
+
+	<div class="main_popup add_photo" data-popup-block="add_photo">
+		<div class="close_popup" data-popup-close="add_photo"></div>
+		<p class="title_pop">Загрузка фотографий</p>
+		<div class="drop_zone_wrap">
+			<div class="drop_zone">
+				<div class="drop_zone_text">
+					<p>Перетащите сюда свои фото <br>или</p>
+					<p class="add_wrap"><a href="#" class="add_file in_bl">Выберите файл</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="buy_block">
+			<div class="cost_txt">
+				Стоимость услуги    <span>200.00 руб.</span>
+			</div>
+			<a href="#" class="violet_btn light" data-popup-close="add_photo">купить</a>
+		</div>
+	</div>
+
+	<div class="main_popup  no_gays" data-popup-block="no_gays">
+		<div class="close_popup" data-popup-close="no_gays"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<span class="in_bl no_gays_icon"></span>
+		<p class="pop_bold_text">Мы за создание и сохранение нормальной семьи, поэтому <br> мужчины не могу звонить друг другу у нас на сайте</p>
+		<p><a class="red_link size18" href="#" data-popup-close="no_gays">Закрыть</a></p>
+	</div>
+
+	<div class="main_popup  time_to_call" data-popup-block="time_to_call">
+		<div class="close_popup" data-popup-close="time_to_call"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<span class="in_bl time_icon"></span>
+		<p class="pop_bold_text">В это время  Brandy не принимает звонки</p>
+		<div class="select_time">
+			<p>Укажите время доступное  в указанных промежутках мы соединим вас</p>
+			<div class="wrap_line">
+				<div class="in_bl">
+					<div class="main_select in_bl m_r12">
+						<select name="">
+							<option value="1">Завтра</option>
+							<option value="1">Завтра</option>
+							<option value="1">Завтра</option>
+							<option value="1">Завтра</option>
+							<option value="1">Завтра</option>
+							<option value="1">Завтра</option>
+						</select>
+					</div>
+					<div class="main_select in_bl ">
+						<select name="">
+							<option value="1">8:00-9:00</option>
+							<option value="1">8:00-9:00</option>
+							<option value="1">8:00-9:00</option>
+							<option value="1">8:00-9:00</option>
+							<option value="1">8:00-9:00</option>
+							<option value="1">8:00-9:00</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p><a href="#" class="violet_btn light">Подтвердить</a></p>
+		<p><a class="red_link size18" href="#" data-popup-close="time_to_call">Закрыть</a></p>
+	</div>
+
+	<div class="main_popup tac not_connected_pop" data-popup-block="not_connected_pop">
+		<div class="close_popup" data-popup-close="not_connected_pop"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<div class="pop_bold_text">Пользователь <a href="#" class="name viol_txt">Brandy</a> еще не подключила <br> услуги голосового вызова.</div>
+		<span class="in_bl not_connected_icon"></span>
+		<div class="descr">Как только пользователь подключит голосовой вызов мы пришлем вам уведомление<br> о возможности позвонить. О вашем намерении позвонить ей, мы направили <br> сообщение.</div>
+		<p><a class="red_link size18" href="#" data-popup-close="time_to_call">Закрыть</a></p>
+	</div>
+
+
+	<div class="main_popup user_call_pop connected_pop" data-popup-block="connected_pop">
+		<div class="close_popup" data-popup-close="connected_pop"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<p class="pop_bold_text">Пользователь <a href="#" class="name viol_txt">Brandy</a> подключила услугу голосового вызова.</p>
+		<div class='photo_wrap'>
+			<a href="#" class="img_wrap in_bl">
+				<img src="images/prof1.jpg" alt="">
+				<span class='photo_verified icon'></span>
+			</a>
+			<p class="name"><span class="viol_txt">Brandy</span>, 20 лет Москва</p>
+		</div>
+		<p><a href="#" class="main_big_btn phone_bg in_bl">Позвонить</a></p>
+		<p><a class="red_link size18" href="#" data-popup-close="connected_pop">Отменить</a></p>
+	</div>
+
+	<div class="main_popup tac not_connected_pop" data-popup-block="not_connected_pop">
+		<div class="close_popup" data-popup-close="not_connected_pop"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<div class="pop_bold_text">Пользователь <a href="#" class="name viol_txt">Brandy</a> еще не подключила <br> услуги голосового вызова.</div>
+		<span class="in_bl not_connected_icon"></span>
+		<div class="descr">Как только пользователь подключит голосовой вызов мы пришлем вам уведомление<br> о возможности позвонить. О вашем намерении позвонить ей, мы направили <br> сообщение.</div>
+		<p><a class="red_link size18" href="#" data-popup-close="not_connected_pop">Закрыть</a></p>
+	</div>
+
+
+	<div class="add_phone main_popup user_call_pop" data-popup-block="user_call_pop">
+		<div class="close_popup" data-popup-close="user_call_pop"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<p class="pop_bold_text">Ваш номер добавлен. Позвонить пользователю?</p>
+		<div class='photo_wrap'>
+			<a href="#" class="img_wrap in_bl">
+				<img src="images/prof1.jpg" alt="">
+				<span class='photo_verified icon'></span>
+			</a>
+			<p class="name"><span class="viol_txt">Brandy</span>, 20 лет Москва</p>
+		</div>
+		<p><a href="#" class="main_big_btn phone_bg in_bl">Позвонить</a></p>
+		<p><a class="red_link size18" href="#" data-popup-close="user_call_pop">Отменить</a></p>
+	</div>
+
+
+
+	<div class="add_phone main_popup sms_pop" data-popup-block="sms_pop">
+		<div class="close_popup" data-popup-close="sms_pop"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<div class="sms_bl">
+			<div class="pop_bold_text">
+				На ваш номер <span class="you_number">8(926) 123–45–67</span> было отправлено <br> SMS c кодом подтверждения
+			</div>
+			<form class="leave_phone in_bl">
+				<div class="top_line">
+					<input class="main_input" type="text" placeholder="введите код из СМС">
+					<button class="violet_btn light">Подтвердить</button>
+				</div>
+			</form>
+			<div class="btn_wrap">
+				<p><a class="red_link" href="#">Получить код повторно</a></p>
+				<p><a class="red_link" href="#">Изменить номер</a></p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="add_phone main_popup voice_call" data-popup-block="voice_call2">
+		<div class="close_popup" data-popup-close="voice_call2"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<p class="pop_bold_text">У вас не подключен звонок.<br> Подключите ваш номер телефона и первый звонок <br> вы сможете совершить бесплатно</p>
+		<div class="descr">Ваш номер не будет виден никому, Ваша конфиденциальность превыше всего. <br> Звонки будут осуществляться внутри сайта и только с Вашего согласия.</div>
+		<form class="leave_phone in_bl">
+			<p class="pact">Продолжая вы соглашаетесь с условиями  <a href="#" class="red_txt">Соглашения</a></p>
+			<div class="wrap_line">
+				<div class="top_line">
+					<input class="main_input no-js-ph" data-inputmask="'mask':'+7 (999) 999-99-99'" type="text" placeholder="Укажите номер телефона">
+					<button class="violet_btn light">Подтвердить</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="add_phone main_popup voice_call" data-popup-block="voice_call">
+		<div class="close_popup" data-popup-close="voice_call"></div>
+		<p class="title_pop">Голосовой вызов</p>
+		<p class="pop_bold_text"><span class="name">Vsya</span> не может дозвониться до тебя,<br> подключи свой мобильный номер.</p>
+		<div class="descr">Ваш номер не будет виден никому, Ваша конфиденциальность превыше всего. <br> Звонки будут осуществляться внутри сайта и только с Вашего согласия.</div>
+		<form class="leave_phone in_bl">
+			<p class="pact">Продолжая вы соглашаетесь с условиями  <a href="#" class="red_txt">Соглашения</a></p>
+			<div class="wrap_line">
+				<div class="top_line">
+					<input class="main_input no-js-ph" data-inputmask="'mask':'+7 (999) 999-99-99'" type="text" placeholder="Укажите номер телефона">
+					<button class="violet_btn light">Подтвердить</button>
+				</div>
+				<div class="top_line2">
+					<label class="in_bl ">
+						<input class="icon-ok" type="checkbox">
+						Будние дни по одному графику
+					</label>
+				</div>
+				<div class="line">
+					<label class="in_bl left_txt">
+						<input class="icon-ok" type="checkbox">
+						Будни
+					</label>
+					<div class="in_bl">
+						<span class="in_bl m_r5">C</span>
+						<div class="main_select in_bl m_r12">
+							<select name="">
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+							</select>
+						</div>
+						<span class="in_bl m_r5">До</span>
+						<div class="main_select in_bl m_r12">
+							<select name="">
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="line">
+					<label class="in_bl left_txt">
+						<input class="icon-ok" type="checkbox">
+						Суббота
+					</label>
+					<div class="in_bl">
+						<span class="in_bl m_r5">C</span>
+						<div class="main_select in_bl m_r12">
+							<select name="">
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+							</select>
+						</div>
+						<span class="in_bl m_r5">До</span>
+						<div class="main_select in_bl m_r12">
+							<select name="">
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="line">
+					<label class="in_bl left_txt">
+						<input class="icon-ok" type="checkbox">
+						Воскресенье
+					</label>
+					<div class="in_bl">
+						<span class="in_bl m_r5">C</span>
+						<div class="main_select in_bl m_r12">
+							<select name="">
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+							</select>
+						</div>
+						<span class="in_bl m_r5">До</span>
+						<div class="main_select in_bl m_r12">
+							<select name="">
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">8:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+								<option value="1">0:00</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="main_popup add_mask" data-popup-block="add_mask">
+		<div class="close_popup" data-popup-close="add_mask"></div>
+		<p class="title_pop">Добавление информации</p>
+		<div class="popup--addinfo_content mb20 tal">
+			<p class="popup--addinfo_subtitle pop_bold_text">Добавь конфиденциальное фото</p>
+			<div class="popup--addinfo_content__text">
+				<p>Как вы могли заметить, фотографии мужчин доступны для просмотра только зарегистрированным пользователям. Благодаря этому, <strong>у большинства мужчин нашего портала есть фото</strong>.</p>
+				<p>Чтобы сохранить Вашу приватность, мы специально добавили возможность не много менять свое фото.</p>
+			</div>
+			<div class="popup--addinfo_mask__grid clearfix">
+				<div class="popup--addinfo_mask__item active">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask1.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask2.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask3.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask4.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask5.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="drop_zone_wrap">
+			<div class="drop_zone">
+				<div class="drop_zone_text">
+					<p>Перетащите сюда свои фото <br>или</p>
+					<p class="add_wrap"><a href="#" class="add_file in_bl">Выберите файл</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="popup--meet__goal tal">
+			<p class="popup--meet__goal__title pop_bold_text">Укажите цели знакомства</p>
+			<p class="popup--meet__goal__text">Указав цели знакомств девушки смогут найти вашу анкету в поиске</p>
+
+			<form action="#" class="popup--meet__goal--form">
+				<div class="clearfix">
+					<div class="in_bl vat popup--meet__goal--form_left">
+						<p><label><input class="icon-ok" type="checkbox"> Постоянные отношения</label></p>
+						<p><label><input class="icon-ok" type="checkbox"> Ищу спонсора</label></p>
+						<p><label><input class="icon-ok" type="checkbox"> Провести вечер</label></p>
+					</div>
+					<div class="in_bl vat popup--meet__goal--form_left">
+						<div class="label_wrap travels">
+							<p>
+								<label>
+									<span class="in_bl viol_radio">
+										<span class="radio_parent"><span class="radio"><input name="1" type="radio"></span></span>
+									</span>
+									<span class="in_bl text_bl">
+										Совместные путешевствия
+									</span>
+								</label>
+							</p>
+							<div class="check_wrap off">
+								<p>
+									<label class="db">
+										<input type="checkbox" class="icon-ok"> 
+										Есть загранпаспорт
+									</label>
+								</p>
+								<p>
+									<label class="db">
+										<input type="checkbox" class="icon-ok"> 
+										Есть шенген
+									</label>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup--addinfo_buttons">
+					<a href="#" class="main_red_btn dib vam">Сохранить</a>
+					<a href="#" class="red_link dib vam">Пропустить</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="main_popup add_mask_second" data-popup-block="add_mask2">
+		<div class="close_popup" data-popup-close="add_mask2"></div>
+		<p class="title_pop">Добавление информации</p>
+		<div class="popup--addinfo_content mb20 tal">
+			<p class="popup--addinfo_subtitle pop_bold_text">Добавь конфиденциальное фото</p>
+			<div class="popup--addinfo_content__text">
+				<p>Как вы могли заметить, фотографии мужчин доступны для просмотра только зарегистрированным пользователям. Благодаря этому, <strong>у большинства мужчин нашего портала есть фото</strong>.</p>
+				<p>Чтобы сохранить Вашу приватность, мы специально добавили возможность не много менять свое фото.</p>
+			</div>
+			<div class="popup--addinfo_mask__grid clearfix">
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask1.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask2.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask3.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask4.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask5.jpg" alt="">
+				</div>
+			</div>
+			<div class="popup--addinfo_crop__wrapper">
+				<div class="popup--addinfo__crop">
+					<div class="popup--addinfo__crop tac">
+						<div class="the_crop__component mb20 tac dib" id="crop-image">
+							<img src="http://placehold.it/200x400" class="resize-image--crop" alt="">
+						</div>
+						<div class="the_crop__components__buttons-wrapper tac">
+							<p class="mb20">
+								<button class="violet_btn light">Сохранить фото</button>
+							</p>
+							<p>
+								<button class="the_crop__add_file">Выбрать другое фото</button>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup--meet__goal tal">
+			<p class="popup--meet__goal__title pop_bold_text">Укажите цели знакомства</p>
+			<p class="popup--meet__goal__text">Указав цели знакомств девушки смогут найти вашу анкету в поиске</p>
+
+			<form action="#" class="popup--meet__goal--form">
+				<div class="in_bl vat popup--meet__goal--form_left">
+					<p><label><input class="icon-ok" type="checkbox"> Постоянные отношения</label></p>
+					<p><label><input class="icon-ok" type="checkbox"> Ищу спонсора</label></p>
+					<p><label><input class="icon-ok" type="checkbox"> Провести вечер</label></p>
+				</div>
+				<div class="in_bl vat popup--meet__goal--form_left">
+					<div class="label_wrap travels">
+						<p>
+							<label>
+								<span class="in_bl viol_radio">
+									<span class="radio_parent"><span class="radio"><input name="1" type="radio"></span></span>
+								</span>
+								<span class="in_bl text_bl">
+									Совместные путешевствия
+								</span>
+							</label>
+						</p>
+						<div class="check_wrap off">
+							<p>
+								<label class="db">
+									<input type="checkbox" class="icon-ok"> 
+									Есть загранпаспорт
+								</label>
+							</p>
+							<p>
+								<label class="db">
+									<input type="checkbox" class="icon-ok"> 
+									Есть шенген
+								</label>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="popup--addinfo_buttons">
+					<a href="#" class="main_red_btn dib vam">Сохранить</a>
+					<a href="#" class="red_link dib vam">Пропустить</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="main_popup add_mask_third" data-popup-block="add_mask3">
+		<div class="close_popup" data-popup-close="add_mask3"></div>
+		<div class="mb20"></div>
+		<div class="popup--addinfo_content tal">
+			<div class="popup--addinfo_mask__grid clearfix">
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask1.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask2.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask3.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask4.jpg" alt="">
+				</div>
+				<div class="popup--addinfo_mask__item">
+					<img class="popup--addinfo_mask_img" src="images/popup_mask/popup_mask5.jpg" alt="">
+				</div>
+			</div>
+			<div class="popup--addinfo_crop__wrapper mb20">
+				<div class="popup--addinfo__crop">
+					<div class="popup--addinfo__crop tac">
+						<div class="the_crop__component tac dib" id="crop-image">
+							<img src="http://placehold.it/200x400" class="resize-image--crop" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="tar text--make--main">
+					<i class="icon-make_main"></i> Сделать основной
+				</div>
+			</div>
+			<div class="the_crop__components__buttons-wrapper tac clearfix">
+				<div class="l_bl left">
+					<button class="the_crop__add_file">Выбрать другое фото</button>
+				</div>
+				<div class="r_bl right">
+					<button class="violet_btn light">Сохранить фото</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+</div>
+	<script src="http://zolushka-project.ru/js/jquery.js"></script>
+	<script src="http://zolushka-project.ru/js/input.mask.js"></script>
+	<!--<script src="http://zolushka-project.ru/js/jquery.slides.js"></script>-->
+	<script src="http://zolushka-project.ru/js/jquery.selectbox.js"></script>
+	<!--<script src="http://zolushka-project.ru/js/slider.js"></script>-->
+	<script src="http://zolushka-project.ru/js/jscrollpane.js"></script>
+
+	
+	<script src="http://zolushka-project.ru/js/OLD_FUNCTIONS.js"></script>
+	<!--<script src="http://zolushka-project.ru/js/qube_crop.js"></script>-->
+
+	<!--<script>-->
+		<!--$(document).ready(function(){-->
+			<!--resizeableImage($('.resize-image&#45;&#45;crop'));-->
+			<!--// console.log('hi')-->
+		<!--});-->
+	<!--</script>-->
+
+	<!--<script src="http://zolushka-project.ru/js/message_popup.js"></script>-->
+	<script src="http://zolushka-project.ru/js/custom.js"></script>
+</body>
+</html>
