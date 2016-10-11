@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>popup_page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="http://zolushka-project.ru/css/customize_pages.css"/>
+    <link rel="stylesheet" type="text/css" href="http://zolushka-project.ru/dist/style.min.css?v=0.0.44"/>
+    <link rel="stylesheet" type="text/css" href="css/popup_addinfo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/confidencial.css"/>
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="overlay">
+        <div class="table_wrap">
+            <div class="td_wrap">
+                <div class="main_popup login_popup" data-popup-block="login">
+                    <div class="close_popup" data-popup-close="login"></div>
+                    <p class="title_pop">Вход</p>
+                    <form method="POST" class="parsley-validate ng-pristine ng-valid" id="authentication-form"
+                          action="/login_check" novalidate="">
+                        <p class="input_wrap">
+                            <input class="main_input parsley-success" data-parsley-errors-messages-disabled="false"
+                                   type="email" name="_username" placeholder="e-mail" required="required"
+                                   data-parsley-id="4"
+                                   style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+                        </p>
+                        <p class="input_wrap"><input class="main_input parsley-success"
+                                                     data-parsley-errors-messages-disabled="false" name="_password"
+                                                     type="password" placeholder="Пароль" required="required"
+                                                     data-parsley-id="6"
+                                                     style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+                        </p>
+                        <p class="error_text" style="display: none;"></p>
+                        <div class="reg_form">
+                            <div class="more_link"><p><a href="/forget-password">
+                                Забыли пароль ?
+                            </a></p></div>
+                        </div>
+                        <div class="input_wrap">
+                            <button type="submit" class="violet_btn in_bl light" data-close="login">Войти
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="main_popup send_message_popup tac" data-popup-block="send_message">
+                    <div class="close_popup" data-popup-close="send_message"></div>
+                    <p class="pop_bold_text">Для отправки сообщений <br> необходимо зарегистрироваться</p>
+                    <div class="descr">
+                        Поймите нас правильно, Золушка project - это <u>закрытый клуб для успешных
+                        мужчин</u>.<br><br>
+
+                        После регистрации Вы получите пробный аккаунт на <b>36</b> часов с возможностью звонить
+                        девушкам, отправлять сообщения и делать рассылки.<br><br>
+
+                        Безопасность переписки обеспечивается технологиями протокола SSL.
+                    </div>
+                    <div class="btn_wrap"><a href="/registration" class="violet_btn light">Зарегистрироваться</a></div>
+                </div>
+                <div class="main_popup announce_banner" data-popup-block="announce_banner"
+                     data-page-url="soderzhanka_about">
+                    <div class="close_popup" data-popup-close="announce_banner"></div>
+                    <div class="announce_banner_lips"><img src="/images/lips.png" alt="soderzhanka-lips"></div>
+                    <p class="title_pop">Узнай все возможности сайта</p>
+                    <div class="announce_banner_text"><p>
+                        Пройди короткую регистрацию и получи <strong>300 рублей</strong> на счет!
+                    </p></div>
+                    <div class="announce_banner_strawberry"><img src="/images/strawberry.png"
+                                                                 alt="soderzhanka-strawberry"></div>
+                    <div class="dib vam"><a href="/registration" class="violet_btn dib vam light submit-button" id=""
+                                            data-id="0">Зарегистрироваться</a></div>
+                </div>
+                <div class="main_popup send_message_popup tac" data-popup-block="login_blocked">
+                    <div class="close_popup" data-popup-close="login_blocked"></div>
+                    <div class="descr pop_bold_text"></div>
+                    <div class="btn_wrap"><a href="/feedback" class="violet_btn light">Обратиться в службу
+                        поддержки</a></div>
+                </div>
+                <div class="main_popup who_online" data-popup-block="mobile_app" style="display: none;">
+                    <div class="close_popup" data-popup-close="mobile_app"></div>
+                    <p class="title_pop">Мобильное приложение</p>
+                    <div class="descr_txt app-mobile-text">Станет доступно через несколько дней</div>
+                    <p><a class="red_link size18" href="#" data-popup-close="mobile_app">Закрыть</a></p></div>
+                <div class="main_popup kept_access_denied" data-popup-block="kept_access_denied">
+                    <div class="close_popup" data-popup-close="kept_access_denied"></div>
+                    <p class="title_pop">Раздел доступен только зарегистрированным пользователям</p>
+                    <div class="descr_txt"><p>В целях повышения безопасности и конфиденциальности с 10.05.2016
+                        мы<br>скрыли от лишних глаз анкеты мужчин нашего сервиса.
+
+                    </p>
+                        <p><br></p>
+                        <p>Для доступа к разделу Вам необходимо зарегистрироваться или войти<br> в свой аккаунт.
+                        </p></div>
+                    <div class="btn_wrap"><a href="/registration" class="violet_btn light">Зарегистрироваться</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slides_popup anim_ready">
+        <div class="table">
+            <div class="td">
+                <div class="img_wrap"></div>
+                <div class="slides_popup_bg"></div>
+                <div class="prev trans_all dur500_all  event_btn click_area"><span class="icon-angle-left"></span>
+                    <div class="prev_bg"></div>
+                </div>
+                <div class="close trans_all dur500_all click_area">
+                    <div class="prev_bg"></div>
+                </div>
+                <span class="close icon-cancel"></span>
+                <div class="checkbox-round checked-avatar" style="display:none; cursor:pointer;"><input type="checkbox"
+                                                                                                        class="no-style"
+                                                                                                        id="check1"><label
+                        for="check1">
+                    <div><i class="fa fa-check"></i></div>
+                    Сделать основной
+                </label></div>
+            </div>
+        </div>
+    </div>
+    <header id="main_header">
+        <div class="top_header">
+            <div class="cont_wrap clearfix tac"><a href="/" class="logo_bl clearfix l_bl">
+                <div class="icon_logo l_bl"><img src="/images/logo.png" alt="#"></div>
+                <div class="txt_logo l_bl"><p class="bot">Золушка</p>
+                    <p class="top">project</p></div>
+            </a>
+                <div class="login_wrap r_bl"><a href="/promo-mobile" class="in_bl it_el app_store" target="_blank">
+                    App Store
+                </a><a href="/promo-mobile" target="_blank" class="in_bl it_el google_play">
+                    Google Play
+                </a>
+                    <div class="login_bl in_bl"><a href="#" class="log_btn in_bl" data-popup-open="login">
+                        Вход
+                    </a><a href="/registration" class="violet_btn reg_btn in_bl">
+                        Регистрация
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="sep_header"></div>
+        <div class="bot_header">
+            <div class="cont_wrap clearfix">
+                <ul class="prof_nav l_bl">
+                    <li class=""><a href="/search">Поиск</a></li>
+                    <li class="sep_line">
+                        |
+                    </li>
+                    <li><a href="/about">
+                        О проекте
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="main_cont">
+        <div class="about_block privacy__page">
+            <div class="cont_wrap clearfix">
+                <div class="selected-block privacy__selected-block">
+                    <div class="border-box">
+                        <div class="mb20">
+                            <div class="privacy__block">
+                                <p><i class="icon-privacy__icon"></i> <span class="in_bl">Конфиденциальность <br><span
+                                        class="privacy__big-text">и безопасность</span></span></p>
+                            </div>
+                            <h1>Безопасность и Конфиденциальность</h1></div>
+                        <p>Золушка Project – один из самых откровенных и в то же время засекреченных порталов знакомств.
+                            Мы постарались сделать все, чтобы защитить конфиденциальность и безопасность каждого
+                            участника сообщества. Ниже представляем развернутую инструкцию в виде советов, следуя
+                            которым, можно будет сохранить инкогнито и защитить свои персональные данные.</p></div>
+                </div>
+                <h2>Действуйте анонимно</h2>
+                <p>Сохранить безопасность можно, выполнив несколько простых шагов:</p>
+                <ul>
+                    <li>Прежде чем Вы зарегистрируетесь на Золушка Project, заведите отдельный электронный ящик. Его вы
+                        будете использовать только для захода на наш портал. Если вы действительно не хотите, чтобы вас
+                        узнали, не регистрируйтесь под своей личной или рабочей почтой. Сервисы Gmail или Hotmail
+                        предлагают создавать бесплатные электронные ящики, не требуя при регистрации номера телефона или
+                        домашнего адреса. А это – лучшая гарантия сохранения анонимности.
+                    </li>
+                    <li>Придумывая никнейм пользователя, не используйте свое настоящее имя или прозвище. Подбирайте
+                        что-то нейтральное, например «Золотой_Дракон» или «Mister_Heart». Так вас будет практически
+                        невозможно идентифицировать.
+                    </li>
+                    <li>Прежде чем передавать другим участникам сообщества личные данные (номер телефона, e-mail,
+                        аккаунт в социальных сетях), убедитесь, что вы действительно готовы сделать это. Вы должны
+                        полностью доверять оппоненту.
+                    </li>
+                </ul>
+                <h2>Надежный пароль</h2>
+                <p>Для полноценной защиты данных любого аккаунта, нужно создавать качественные пароли. Золушка Project
+                    тоже учитывает это при регистрации каждого участника. Используйте для этого несуществующие сочетания
+                    букв, чередование цифр и символов, и тогда вас никогда не взломают.</p>
+                <p>Забудьте о простых детских паролях, типа «12345qwerty» или даты своего рождения. Пароль должен быть
+                    сложным. На всякий случай запишите его в блокноте, но потом обязательно выучите наизусть и
+                    уничтожьте запись. И никому не говорите свой пароль.</p>
+                <p>Помните! Золушка Project никогда не станет запрашивать ваш пароль ни по телефону, ни по электронной
+                    почте. Поэтому игнорируйте подобные сообщения.</p>
+                <h2>Персональные варианты оплаты</h2>
+                <p>Преимущества оплаты, которые предоставляет Золушка Project:</p>
+                <ul>
+                    <li>Золушка Project принимает следующие виды платежей: WebMoney; по картам VISA и MasterCard;
+                        банковские переводы и другие способы оплаты, доступные в вашем регионе.
+                    </li>
+                    <li>Если вы платите по кредитной карте, детали транзакции кодируются, передаются платежной системе,
+                        а затем вам приходит счет в виде зашифрованной информации. Т.е. банк не узнает, на что именно вы
+                        потратили средства.
+                    </li>
+                    <li>Платежи через мобильных операторов так же являются полностью анонимными.</li>
+                </ul>
+                <p>Вся информация (профили участников, настройки их учетных записей) хранится у нас в зашифрованном виде
+                    согласно срокам хранения информации в электронном виде. </p>
+                <h2>Скрытый просмотр</h2>
+                <p>Еще несколько способов сохранить конфиденциальность:</p>
+                <ul>
+                    <li>Открывайте окно сайта в режиме Incognito в браузере Google Chrome. Если вы используете Safari
+                        или иной браузер, то после каждого посещения Золушка Project удаляйте историю и чистите куки
+                        (cookee). Это делается в настройках.
+                    </li>
+                    <li>Как можно реже заходите на свой профиль в Золушка Project из общественных мест, где
+                        предоставляется Wi-Fi (кафе, бары, аэропорты и т.п.).
+                    </li>
+                    <li>Не используйте такую функцию в браузере как «автоматическое запоминание пароля». Да, это очень
+                        удобно, но небезопасно. Ведь тогда с этого компьютера зайти на сайт под вашим профилем сможет
+                        кто угодно (друзья, члены семьи, преступники при факте кражи ноутбука и т.п.).
+                    </li>
+                </ul>
+                <h2>Спам (фишинг)</h2>
+                <p>Напоминаем: Золушка Project никогда не запрашивает персональную информацию по электронной почте. Этим
+                    обычно занимаются мошенники – спамеры. Они занимаются рассылкой писем под именем службы поддержки. В
+                    сообщениях они просят ввести куда-нибудь ваш пароль или пройти по ссылке. Как отличить письмо
+                    спамера от письма реальной администрации сайта? </p>
+                <p>Есть несколько способов:</p>
+                <ul>
+                    <li> 1. Если вам звонят (пишут) якобы из Золушка Project и просят продиктовать личные данные (имя,
+                        номер телефона, адрес, никнейм профиля и т.п.).
+                    </li>
+                    <li>2. Если вы получили письмо, в котором предлагается «нажать здесь» или пройти по подозрительной
+                        ссылке с набором букв или цифр. Нормальные ссылки содержат классическое начало https://, затем
+                        идет имя сайта, а потом стандартное .com (точка ком).
+                    </li>
+                    <li>3. Если вы получили письмо от адресанта, имя которого не совпадает с именем компании Золушка
+                        Project.
+                    </li>
+                </ul>
+                <p>Все перечисленные выше случаи должны вас насторожить. При возникновении перечисленных ситуаций
+                    следует немедленно сбросить вызов или удалить (заблокировать) адресанта. Если вы сомневаетесь,
+                    достоверное это сообщение или нет, обратитесь в службу поддержки напрямую.</p>
+                <p>Если вы будете соблюдать все эти простые меры предосторожности, то ваши персональные данные никогда
+                    не попадут в руки мошенников или третьих лиц.</p>
+            </div>
+        </div>
+    </div>
+    <footer id="main_footer">
+        <div class="bg_wrap"></div>
+        <div class="bottom_footer">
+            <div class="cont_wrap clearfix">
+                <div class="l_bl">
+                    <ul class="nav">
+                        <li><a href="/zolushka-project">О проекте</a></li>
+                        <li><a href="/blog">Блог</a></li>
+                        <li><a href="#">Города</a>
+                            <ul id="footer-city-select" class="dropdown">
+                                <li class="clearfix"><label><span class="dib vam"></span><span class="dib vam"
+                                                                                               data-get-value="text-label"><a
+                                        href="/city/saint-petersburg">Санкт-Петербург</a></span></label></li>
+                                <li class="clearfix"><label><span class="dib vam"></span><span class="dib vam"
+                                                                                               data-get-value="text-label"><a
+                                        href="/city/ekaterinburg">Екатеринбург</a></span></label></li>
+                                <li class="clearfix"><label><span class="dib vam"></span><span class="dib vam"
+                                                                                               data-get-value="text-label"><a
+                                        href="/city/krasnoyarsk">Красноярск</a></span></label></li>
+                                <li class="clearfix"><label><span class="dib vam"></span><span class="dib vam"><a
+                                        href="/city/novosibirsk">Новосибирск</a></span></label></li>
+                                <li class="clearfix"><label><span class="dib vam"></span><span class="dib vam"
+                                                                                               data-get-value="text-label"><a
+                                        href="/city/perm">Пермь</a></span></label></li>
+                                <li class="clearfix"><label><span class="dib vam"></span><span class="dib vam"
+                                                                                               data-get-value="text-label"><a
+                                        href="/city/samara">Самара</a></span></label></li>
+                                <li class="clearfix"><label><span class="dib vam"></span><span class="dib vam"
+                                                                                               data-get-value="text-label"><a
+                                        href="/city/ufa">Уфа</a></span></label></li>
+                            </ul>
+                        </li>
+                        <li><a href="/terms-of-use" target="blank">Пользовательское
+                            соглашение</a></li>
+                        <li><a href="/rules">Правила</a></li>
+                    </ul>
+                    <div class="soc_txt">
+                        <div class="soc_text">
+                            Оставайтся в курсе <br>
+                            Содержанки в социальных сетях
+                        </div>
+                        <div class="soc_icons"><a href="https://vk.com/zolushka_project" target="_blank">
+                            <div class="icon socicon-vkontakte"></div>
+                        </a><a href="https://www.facebook.com/zolushka.project" target="_blank">
+                            <div class="icon socicon-facebook"></div>
+                        </a><a href="https://www.instagram.com/zolushka.promo/" target="_blank">
+                            <div class="icon socicon-instagram"></div>
+                        </a><a href="https://twitter.com/zolushkaproject" target="_blank">
+                            <div class="icon socicon-twitter"></div>
+                        </a><a href="https://google.com/+SoderzhankionlineRuOfficial" target="_blank">
+                            <div class="icon socicon-googleplus"></div>
+                        </a><a href="https://youtube.com/c/SoderzhankionlineRuOfficial" target="_blank">
+                            <div class="icon socicon-youtube"></div>
+                        </a></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="copy">
+                        © «Золушка project». Лучший on-line сервис по поиску спонсоров и содержанок,
+                        2015-2016<br>
+                        Администрация не несёт ответственности за размещённые анкеты - Вся информация на сайте
+                        предоставлена посетителями.
+                    </div>
+                </div>
+                <div class="r_bl">
+                    <ul class="pink_nav">
+                        <li><a href="/to-mobile-version">Мобильный сайт</a></li>
+                        <li><a href="/feedback">Обратная связь</a></li>
+                    </ul>
+                    <div class="footer__application tar clearfix"><a href="/promo-mobile" target="_blank"
+                                                                     class="footer__application-icon"><i
+                            class="icon-new__appstore"></i></a><a href="/promo-mobile" target="_blank"
+                                                                  class="footer__application-icon"><i
+                            class="icon-new__google-play"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="http://zolushka-project.ru/js/jquery.js"></script>
+<script src="http://zolushka-project.ru/js/input.mask.js"></script>
+<!--<script src="http://zolushka-project.ru/js/jquery.slides.js"></script>-->
+<script src="http://zolushka-project.ru/js/jquery.selectbox.js"></script>
+<!--<script src="http://zolushka-project.ru/js/slider.js"></script>-->
+<script src="http://zolushka-project.ru/js/jscrollpane.js"></script>
+
+
+<script src="http://zolushka-project.ru/js/OLD_FUNCTIONS.js"></script>
+<!--<script src="http://zolushka-project.ru/js/qube_crop.js"></script>-->
+
+<!--<script>-->
+<!--$(document).ready(function(){-->
+<!--resizeableImage($('.resize-image&#45;&#45;crop'));-->
+<!--// console.log('hi')-->
+<!--});-->
+<!--</script>-->
+
+<!--<script src="http://zolushka-project.ru/js/message_popup.js"></script>-->
+<script src="http://zolushka-project.ru/js/custom.js"></script>
+</body>
+</html>
